@@ -10,8 +10,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-
+      theme: ThemeData(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            "Flutter Test",
+            style: TextStyle(
+              fontFamily: "Montserrat",
+              fontSize: 40,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          backgroundColor: Colors.amberAccent,
+        ),
       )
     );
   }
