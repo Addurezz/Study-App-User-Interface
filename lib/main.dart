@@ -33,47 +33,53 @@ class MyApp extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.red[900],
-                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 padding: EdgeInsets.all(8),
-                margin: EdgeInsets.all(10),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          spacing: 10,
-                            children: [
+                margin: EdgeInsets.fromLTRB(11,18,11,18),
+                child: Container(
+                    margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                    child: Column(children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(spacing: 10, children: [
+                            Icon(
+                              CupertinoIcons.exclamationmark_circle_fill,
+                              color: Colors.white,
+                            ),
+                            Text("Meldung",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500)),
+                          ]),
                           Icon(
-                            CupertinoIcons.exclamationmark_circle_fill,
+                            Icons.close,
                             color: Colors.white,
-                          ),
-                          Text("Meldung",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500)),
-                        ]),
-                        Icon(
-                          Icons.close,
-                          color: Colors.white,
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
-              // Text Datum
-              Container(),
-
-              // 4 Kästchen
-              Container(),
-
-              //Mensa
-              Container(),
-
-              // Kalender
-              Container(),
+                          )
+                        ],
+                      ),
+                      Container(
+                          margin: EdgeInsets.all(10),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Die Einschreibung für mündliche Prüfungen hat begonnen und endet am",
+                                style: TextStyle(
+                                    color: Colors.white70,
+                                    fontWeight: FontWeight.w500),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "21.01.2025",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          )),
+                    ])),
+              )
             ],
           ),
           bottomNavigationBar:
