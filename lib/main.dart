@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,21 +11,82 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            "Flutter Test",
-            style: TextStyle(
-              fontFamily: "Montserrat",
-              fontSize: 40,
-              fontWeight: FontWeight.w600,
-            ),
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          backgroundColor: Colors.blue[900],
+          appBar: AppBar(
+              backgroundColor: Colors.white,
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.menu),
+                  Text("Study-App",
+                      style: TextStyle(
+                          color: Colors.blue[900],
+                          fontWeight: FontWeight.bold)),
+                  Icon(Icons.person)
+                ],
+              )),
+          body: Column(
+            children: [
+              // red rectangle+
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.red[900],
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
+                padding: EdgeInsets.all(8),
+                margin: EdgeInsets.all(10),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          spacing: 10,
+                            children: [
+                          Icon(
+                            CupertinoIcons.exclamationmark_circle_fill,
+                            color: Colors.white,
+                          ),
+                          Text("Meldung",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500)),
+                        ]),
+                        Icon(
+                          Icons.close,
+                          color: Colors.white,
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              // Text Datum
+              Container(),
+
+              // 4 Kästchen
+              Container(),
+
+              //Mensa
+              Container(),
+
+              // Kalender
+              Container(),
+            ],
           ),
-          backgroundColor: Colors.amberAccent,
-        ),
-      )
-    );
+          bottomNavigationBar:
+              BottomNavigationBar(items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.access_alarm),
+              label: "first",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.ac_unit_outlined),
+              label: "second",
+            ),
+          ]),
+        ));
   }
 }
-
