@@ -134,92 +134,224 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
 
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                  ),
-                  child: Wrap(
-                    spacing: 10,
-                    children: [
-                      Row(
+              Container(
+                margin: EdgeInsets.fromLTRB(11, 18, 11, 18),
+                padding: EdgeInsets.fromLTRB(8,8,8,18),
+                decoration: BoxDecoration(
+                  color: Colors.white70,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                ),
+                child: Wrap(
+                  spacing: 10,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Icon(Icons.calendar_today),
-                          Text("Heute",
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.black54,
-                                  fontWeight: FontWeight.w500)),
+                          Row(
+                            spacing: 10,
+                            children: [
+                              Icon(Icons.calendar_today),
+                              Text("Heute",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      color: Colors.black54,
+                                      fontWeight: FontWeight.w500)),
+                            ],
+                          ),
+
+                          Icon(Icons.more_vert)
                         ],
                       ),
-                      Center(
-                        child: Wrap(
-                          spacing: 8,
-                          runSpacing: 8,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                              ),
-                              height: 150,
-                              width: 150,
+                    ),
+                    Center(
+                      child: Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20)),
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                              ),
-                              height: 150,
-                              width: 150,
+
+                            height: 100,
+                            width: 100,
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10,2,10,2),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                                    color: Colors.blueAccent
+                                  ),
+                                  child: Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.ac_unit_outlined),
+                                      Text("7:30")
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                              ),
-                              height: 150,
-                              width: 150,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                              BorderRadius.all(Radius.circular(20)),
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                              ),
-                              height: 150,
-                              width: 150,
+
+                            height: 100,
+                            width: 100,
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10,2,10,2),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                                      color: Colors.blueAccent
+                                  ),
+                                  child: Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.ac_unit_outlined),
+                                      Text("7:30")
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                              ),
-                              height: 150,
-                              width: 150,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                              BorderRadius.all(Radius.circular(20)),
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                              ),
-                              height: 150,
-                              width: 150,
+
+                            height: 100,
+                            width: 100,
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10,2,10,2),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                                      color: Colors.blueAccent
+                                  ),
+                                  child: Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.ac_unit_outlined),
+                                      Text("7:30")
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                              BorderRadius.all(Radius.circular(20)),
+                            ),
+
+                            height: 100,
+                            width: 100,
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10,2,10,2),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                                      color: Colors.blueAccent
+                                  ),
+                                  child: Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.ac_unit_outlined),
+                                      Text("7:30")
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                              BorderRadius.all(Radius.circular(20)),
+                            ),
+
+                            height: 100,
+                            width: 100,
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10,2,10,2),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                                      color: Colors.blueAccent
+                                  ),
+                                  child: Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.ac_unit_outlined),
+                                      Text("7:30")
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                              BorderRadius.all(Radius.circular(20)),
+                            ),
+
+                            height: 100,
+                            width: 100,
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(10,2,10,2),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                                      color: Colors.blueAccent
+                                  ),
+                                  child: Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.ac_unit_outlined),
+                                      Text("7:30")
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-          ),
+              ),
+            ],
+          )),
           bottomNavigationBar:
               BottomNavigationBar(items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
