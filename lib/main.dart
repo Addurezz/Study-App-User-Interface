@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 padding: EdgeInsets.all(8),
-                margin: EdgeInsets.fromLTRB(11, 18, 11, 18),
+                margin: EdgeInsets.fromLTRB(11, 10, 11, 18),
                 child: Container(
                     margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
                     child: Column(children: [
@@ -104,7 +104,7 @@ class MyApp extends StatelessWidget {
               //
 
               Container(
-                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                margin: EdgeInsets.fromLTRB(10, 0, 10, 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 20,
@@ -150,7 +150,7 @@ class MyApp extends StatelessWidget {
               //
 
               Container(
-                  margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                  margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
                   padding: EdgeInsets.all(8),
                   height: 200,
                   decoration: BoxDecoration(
@@ -225,7 +225,7 @@ class MyApp extends StatelessWidget {
               //
 
               Container(
-                margin: EdgeInsets.fromLTRB(11, 18, 11, 18),
+                margin: EdgeInsets.fromLTRB(11, 10, 11, 5),
                 padding: EdgeInsets.fromLTRB(8, 8, 8, 18),
                 decoration: BoxDecoration(
                   color: Colors.white70,
