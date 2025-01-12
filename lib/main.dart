@@ -30,14 +30,17 @@ class MyApp extends StatelessWidget {
           body: SingleChildScrollView(
               child: Column(
             children: [
-              // red rectangle+
+              //
+              // Meldung Pop-up
+              //
+
               Container(
                 decoration: BoxDecoration(
                   color: Colors.red[900],
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 padding: EdgeInsets.all(8),
-                margin: EdgeInsets.fromLTRB(11, 18, 11, 18),
+                margin: EdgeInsets.fromLTRB(11, 10, 11, 18),
                 child: Container(
                     margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
                     child: Column(children: [
@@ -82,6 +85,10 @@ class MyApp extends StatelessWidget {
                     ])),
               ),
 
+              //
+              // Datumsanzeige
+              //
+
               Center(
                 child: Text(
                   "Donnerstag, 12. Dezember",
@@ -92,8 +99,12 @@ class MyApp extends StatelessWidget {
                 ),
               ),
 
+              //
+              // Links für diverse Seiten
+              //
+
               Container(
-                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                margin: EdgeInsets.fromLTRB(10, 0, 10, 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 20,
@@ -134,8 +145,87 @@ class MyApp extends StatelessWidget {
                 ),
               ),
 
+              //
+              // Mensa Informationen
+              //
+
               Container(
-                margin: EdgeInsets.fromLTRB(11, 18, 11, 18),
+                  margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                  padding: EdgeInsets.all(8),
+                  height: 200,
+                  decoration: BoxDecoration(
+                      color: Colors.white70,
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                            child: Row(
+                              spacing: 10,
+                              children: [
+                                Icon(Icons.coffee),
+                                Text(
+                                  "Mensa",
+                                  style: TextStyle(fontSize: 17),
+                                )
+                              ],
+                            ),
+                          ),
+                          Icon(Icons.more_vert),
+                        ],
+                      ),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(0, 0, 30, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                              child: Column(
+                                spacing: 13,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Wann? 4. DS"),
+                                  Text("Wo? Alte Mensa"),
+                                  ElevatedButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Zum Angebot",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                    style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.blue[900]),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              child: SizedBox(
+                                width: 130,
+                                height: 130,
+                                child: ClipRRect(
+                                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                                    child: Image.asset("assets/eat.jpg",
+                                        fit: BoxFit.cover,
+                                    )),
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  )),
+
+              //
+              // Calender Container
+              //
+
+              Container(
+                margin: EdgeInsets.fromLTRB(11, 10, 11, 5),
                 padding: EdgeInsets.fromLTRB(8, 8, 8, 18),
                 decoration: BoxDecoration(
                   color: Colors.white70,
@@ -145,7 +235,7 @@ class MyApp extends StatelessWidget {
                   spacing: 10,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                      margin: EdgeInsets.fromLTRB(10, 5, 10, 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -155,11 +245,11 @@ class MyApp extends StatelessWidget {
                               Icon(Icons.calendar_today),
                               Text("Heute",
                                   style: TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.black54,
-                                      fontWeight: FontWeight.w500)),
+                                    fontSize: 17,
+                                  )),
                             ],
                           ),
+
                           Icon(Icons.more_vert)
                         ],
                       ),
@@ -175,6 +265,7 @@ class MyApp extends StatelessWidget {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
+
                             height: 100,
                             width: 100,
                             child: Column(
