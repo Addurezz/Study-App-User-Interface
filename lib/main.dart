@@ -355,14 +355,33 @@ class MyApp extends StatelessWidget {
           bottomNavigationBar:
               BottomNavigationBar(items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.access_alarm),
-              label: "first",
+              icon: Icon(Icons.dashboard),
+              label: "Dash",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.ac_unit_outlined),
-              label: "second",
+              icon: Icon(Icons.music_note),
+              label: "Musik",
             ),
-          ]),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_today_rounded),
+              label: "Stundenplan",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.list),
+              label: "TODO",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.star),
+              label: "Pflanzen",
+            ),
+
+
+          ],
+          unselectedItemColor: Colors.blue[900],
+          selectedItemColor: Colors.blue[900],
+          showUnselectedLabels: true,
+          ),
+
         ));
   }
 }
