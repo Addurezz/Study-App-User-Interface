@@ -80,6 +80,13 @@ class MyApp extends StatelessWidget {
                           )),
                     ])),
               ),
+
+              Center(
+                child: Text("Donnerstag, 12. Dezember", style: TextStyle(
+                    color: Colors.white, fontSize: 25, fontWeight: FontWeight
+                        .w700),),
+              ),
+
               Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -88,7 +95,7 @@ class MyApp extends StatelessWidget {
                 ),
               child: Wrap(
                   spacing: 10,
-                
+
                   children: [
                     Row(
                       children: [
@@ -109,7 +116,7 @@ class MyApp extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.grey,
                             borderRadius: BorderRadius.all(Radius.circular(20)),
-                            
+
                           ),
                           height: 150,
                           width: 150,
@@ -153,13 +160,13 @@ class MyApp extends StatelessWidget {
                        ],
                        ),
                      ),
-                  
+
                   ],
 
               ),
               ),
             ],
-            
+
           ),
           bottomNavigationBar:
               BottomNavigationBar(items: const <BottomNavigationBarItem>[
