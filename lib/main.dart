@@ -27,146 +27,198 @@ class MyApp extends StatelessWidget {
                   Icon(Icons.person)
                 ],
               )),
-          body: Column(
-            children: [
-              // red rectangle+
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.red[900],
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                ),
-                padding: EdgeInsets.all(8),
-                margin: EdgeInsets.fromLTRB(11,18,11,18),
-                child: Container(
-                    margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
-                    child: Column(children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(spacing: 10, children: [
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                // red rectangle+
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.red[900],
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  padding: EdgeInsets.all(8),
+                  margin: EdgeInsets.fromLTRB(11, 18, 11, 18),
+                  child: Container(
+                      margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                      child: Column(children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(spacing: 10, children: [
+                              Icon(
+                                CupertinoIcons.exclamationmark_circle_fill,
+                                color: Colors.white,
+                              ),
+                              Text("Meldung",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500)),
+                            ]),
                             Icon(
-                              CupertinoIcons.exclamationmark_circle_fill,
+                              Icons.close,
                               color: Colors.white,
-                            ),
-                            Text("Meldung",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w500)),
-                          ]),
-                          Icon(
-                            Icons.close,
-                            color: Colors.white,
-                          )
+                            )
+                          ],
+                        ),
+                        Container(
+                            margin: EdgeInsets.all(10),
+                            child: Column(
+                              children: [
+                                Text(
+                                  "Die Einschreibung für mündliche Prüfungen hat begonnen und endet am",
+                                  style: TextStyle(
+                                      color: Colors.white70,
+                                      fontWeight: FontWeight.w500),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Text(
+                                  "21.01.2025",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white),
+                                ),
+                              ],
+                            )),
+                      ])),
+                ),
+
+                Center(
+                  child: Text(
+                    "Donnerstag, 12. Dezember",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ),
+
+                Container(
+                  margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 20,
+                    children: [
+                      Container(
+                          width: 60,
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.yellowAccent,
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: Icon(Icons.accessible_forward_sharp)),
+                      Container(
+                          width: 60,
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: Icon(Icons.accessible_forward_sharp)),
+                      Container(
+                          width: 60,
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.purpleAccent,
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: Icon(Icons.accessible_forward_sharp)),
+                      Container(
+                          width: 60,
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.greenAccent,
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: Icon(Icons.accessible_forward_sharp))
+                    ],
+                  ),
+                ),
+
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  child: Wrap(
+                    spacing: 10,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.calendar_today),
+                          Text("Heute",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.black54,
+                                  fontWeight: FontWeight.w500)),
                         ],
                       ),
-                      Container(
-                          margin: EdgeInsets.all(10),
-                          child: Column(
-                            children: [
-                              Text(
-                                "Die Einschreibung für mündliche Prüfungen hat begonnen und endet am",
-                                style: TextStyle(
-                                    color: Colors.white70,
-                                    fontWeight: FontWeight.w500),
-                                textAlign: TextAlign.center,
+                      Center(
+                        child: Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
                               ),
-                              Text(
-                                "21.01.2025",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white),
+                              height: 150,
+                              width: 150,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
                               ),
-                            ],
-                          )),
-                    ])),
-              ),
-
-              Center(
-                child: Text("Donnerstag, 12. Dezember", style: TextStyle(
-                    color: Colors.white, fontSize: 25, fontWeight: FontWeight
-                        .w700),),
-              ),
-
-              Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(20)),
-
-                ),
-              child: Wrap(
-                  spacing: 10,
-
-                  children: [
-                    Row(
-                      children: [
-                        Icon(Icons.calendar_today),
-                        Text("Heute",
-                              style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.black54,
-                              fontWeight: FontWeight.w500)),
-                      ],
-                    ),
-                     Center(
-                       child: Wrap(
-                        spacing: 8,
-                        runSpacing: 8,
-                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-
-                          ),
-                          height: 150,
-                          width: 150,
-
-                        ),Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          height: 150,
-                          width: 150,
-                        ),Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          height: 150,
-                          width: 150,
-                        ),Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          height: 150,
-                          width: 150,
-                        ),Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          height: 150,
-                          width: 150,
-                        ),Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          height: 150,
-                          width: 150,
+                              height: 150,
+                              width: 150,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              ),
+                              height: 150,
+                              width: 150,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              ),
+                              height: 150,
+                              width: 150,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              ),
+                              height: 150,
+                              width: 150,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              ),
+                              height: 150,
+                              width: 150,
+                            ),
+                          ],
                         ),
-                       ],
-                       ),
-                     ),
-
-                  ],
-
-              ),
-              ),
-            ],
-
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           bottomNavigationBar:
               BottomNavigationBar(items: const <BottomNavigationBarItem>[
