@@ -105,9 +105,9 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        spacing: 10,
                         children: [
                           Row(
+                            spacing: 10,
                             children: [
                               Icon(Icons.calendar_today),
                               Text("Heute",
