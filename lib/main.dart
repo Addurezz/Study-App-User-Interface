@@ -79,8 +79,87 @@ class MyApp extends StatelessWidget {
                             ],
                           )),
                     ])),
-              )
+              ),
+              Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+
+                ),
+              child: Wrap(
+                  spacing: 10,
+                
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.calendar_today),
+                        Text("Heute",
+                              style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.black54,
+                              fontWeight: FontWeight.w500)),
+                      ],
+                    ),
+                     Center(
+                       child: Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                       children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                            
+                          ),
+                          height: 150,
+                          width: 150,
+
+                        ),Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                          ),
+                          height: 150,
+                          width: 150,
+                        ),Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                          ),
+                          height: 150,
+                          width: 150,
+                        ),Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                          ),
+                          height: 150,
+                          width: 150,
+                        ),Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                          ),
+                          height: 150,
+                          width: 150,
+                        ),Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                          ),
+                          height: 150,
+                          width: 150,
+                        ),
+                       ],
+                       ),
+                     ),
+                  
+                  ],
+
+              ),
+              ),
             ],
+            
           ),
           bottomNavigationBar:
               BottomNavigationBar(items: const <BottomNavigationBarItem>[
