@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               )),
           body: Column(
             children: [
-              // red rectangle+
+              // red rectangle
               Container(
                 decoration: BoxDecoration(
                   color: Colors.red[900],
@@ -79,7 +79,14 @@ class MyApp extends StatelessWidget {
                             ],
                           )),
                     ])),
-              )
+              ),
+
+              Center(
+                child: Text("Donnerstag, 12. Dezember", style: TextStyle(
+                    color: Colors.white, fontSize: 25, fontWeight: FontWeight
+                        .w700),),
+              ),
+
             ],
           ),
           bottomNavigationBar:
